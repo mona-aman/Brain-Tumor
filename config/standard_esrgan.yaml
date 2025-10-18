@@ -1,0 +1,98 @@
+# Standard ESRGAN Configuration (Complete)
+
+experiment:
+  name: "standard_esrgan"
+  seed: 42
+  device: "cuda"
+  num_workers: 4
+
+data:
+  primary_dataset:
+    root: "data/primary"
+    train_split: "Training"
+    test_split: "Testing"
+  
+  crossval_dataset:
+    root: "data/crossval/brain_tumor_dataset"
+    train_split: "yes"
+    test_split: "no"
+  
+  image_size: 128
+  batch_size: 8
+  classes: ["glioma", "meningioma", "notumor", "pituitary"]
+  num_classes: 4
+
+augmentation:
+  train:
+    horizontal_flip: 0.5
+    vertical_flip: 0.5
+    random_brightness_contrast: 0.2
+    random_crop: true
+  
+  test:
+    normalize_only: true
+
+model:
+  generator:
+    in_channels: 3
+    out_channels: 3
+    num_features: 64
+    num_blocks: 8
+    growth_rate: 32
+  
+  discriminator:
+    in_channels: 3
+    num_features: 64
+  
+  classifier:
+    backbone: "resnet50"
+    pretrained: true
+    num_classes: 4
+    dropout: 0.5
+
+training:
+  epochs: 50
+  learning_rate: 0.0001
+  betas: [0.9, 0.999]
+  weight_decay: 0.0001
+  
+  scheduler:
+    type: "ReduceLROnPlateau"
+    patience: 5
+    factor: 0.5
+    min_lr: 0.000001
+  
+  early_stopping:
+    patience: 10
+    min_delta: 0.001
+  
+  gradient_clip: 1.0
+
+loss_weights:
+  adversarial: 1.0
+  perceptual: 0.01
+  content: 0.1
+  classification: 0.0  # Standard ESRGAN - no classification loss
+
+uncertainty:
+  num_samples: 20
+  dropout_rate: 0.2
+  threshold: 0.5
+
+logging:
+  log_interval: 10
+  save_interval: 5
+  use_wandb: false
+  wandb_project: "task-aware-denoising"
+  
+checkpointing:
+  save_dir: "results/checkpoints"
+  save_best_only: true
+  monitor: "val_loss"
+  mode: "min"
+
+evaluation:
+  metrics: ["ssim", "psnr", "mse", "accuracy", "f1_score"]
+  per_class_analysis: true
+  uncertainty_analysis: true
+  generate_visualizations: true
