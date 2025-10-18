@@ -1,0 +1,30 @@
+================================================================================
+UNCERTAINTY ANALYSIS COMPARISON
+================================================================================
+
+
+Standard ESRGAN:
+----------------------------------------
+  flag_rate: 0.3913
+  num_flagged: 513
+  num_confident: 798
+  confident_accuracy: 0.8446
+  flag_precision: 0.4990
+  uncertainty_error_correlation: 0.4141
+  correlation_p_value: 0.0000
+  uncertainty_auc: 0.7635
+  accuracy: 0.7101
+  mean_uncertainty: 0.40187177062034607
+
+Task-Aware ESRGAN:
+----------------------------------------
+  flag_rate: 0.2799
+  num_flagged: 367
+  num_confident: 944
+  confident_accuracy: 0.9227
+  flag_precision: 0.4741
+  uncertainty_error_correlation: 0.4548
+  correlation_p_value: 0.0000
+  uncertainty_auc: 0.8357
+  accuracy: 0.8116
+  mean_uncertainty: 0.2958832383155823

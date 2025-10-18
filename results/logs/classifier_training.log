@@ -1,0 +1,330 @@
+2025-10-14 06:22:59 - __main__ - INFO - Starting classifier training
+2025-10-14 06:22:59 - __main__ - INFO - Config: config/base_config.yaml
+2025-10-14 06:22:59 - __main__ - INFO - Using device: cuda
+2025-10-14 06:24:26 - __main__ - INFO - Starting classifier training
+2025-10-14 06:24:26 - __main__ - INFO - Config: config/base_config.yaml
+2025-10-14 06:24:26 - __main__ - INFO - Using device: cuda
+2025-10-14 06:24:28 - data.dataset - INFO - 
+Dataset: Training
+2025-10-14 06:24:28 - data.dataset - INFO - Total images: 5712
+2025-10-14 06:24:28 - data.dataset - INFO -   glioma: 1321
+2025-10-14 06:24:28 - data.dataset - INFO -   meningioma: 1339
+2025-10-14 06:24:28 - data.dataset - INFO -   notumor: 1595
+2025-10-14 06:24:28 - data.dataset - INFO -   pituitary: 1457
+2025-10-14 06:24:29 - data.dataset - INFO - 
+Dataset: Testing
+2025-10-14 06:24:29 - data.dataset - INFO - Total images: 1311
+2025-10-14 06:24:29 - data.dataset - INFO -   glioma: 300
+2025-10-14 06:24:29 - data.dataset - INFO -   meningioma: 306
+2025-10-14 06:24:29 - data.dataset - INFO -   notumor: 405
+2025-10-14 06:24:29 - data.dataset - INFO -   pituitary: 300
+2025-10-14 06:24:29 - __main__ - INFO - Training samples: 5712
+2025-10-14 06:24:29 - __main__ - INFO - Testing samples: 1311
+2025-10-14 06:26:59 - __main__ - INFO - Starting classifier training
+2025-10-14 06:26:59 - __main__ - INFO - Config: config/base_config.yaml
+2025-10-14 06:26:59 - __main__ - INFO - Using device: cuda
+2025-10-14 06:27:43 - data.dataset - INFO - 
+Dataset: Training
+2025-10-14 06:27:43 - data.dataset - INFO - Total images: 5712
+2025-10-14 06:27:43 - data.dataset - INFO -   glioma: 1321
+2025-10-14 06:27:43 - data.dataset - INFO -   meningioma: 1339
+2025-10-14 06:27:43 - data.dataset - INFO -   notumor: 1595
+2025-10-14 06:27:43 - data.dataset - INFO -   pituitary: 1457
+2025-10-14 06:27:54 - data.dataset - INFO - 
+Dataset: Testing
+2025-10-14 06:27:54 - data.dataset - INFO - Total images: 1311
+2025-10-14 06:27:54 - data.dataset - INFO -   glioma: 300
+2025-10-14 06:27:54 - data.dataset - INFO -   meningioma: 306
+2025-10-14 06:27:54 - data.dataset - INFO -   notumor: 405
+2025-10-14 06:27:54 - data.dataset - INFO -   pituitary: 300
+2025-10-14 06:27:54 - __main__ - INFO - Training samples: 5712
+2025-10-14 06:27:54 - __main__ - INFO - Testing samples: 1311
+2025-10-14 06:27:55 - __main__ - INFO - Model parameters: 24,564,292
+2025-10-14 06:33:27 - __main__ - INFO - Starting classifier training
+2025-10-14 06:33:27 - __main__ - INFO - Config: config/base_config.yaml
+2025-10-14 06:33:27 - __main__ - INFO - Using device: cuda
+2025-10-14 06:33:29 - data.dataset - INFO - 
+Dataset: Training
+2025-10-14 06:33:29 - data.dataset - INFO - Total images: 5712
+2025-10-14 06:33:29 - data.dataset - INFO -   glioma: 1321
+2025-10-14 06:33:29 - data.dataset - INFO -   meningioma: 1339
+2025-10-14 06:33:29 - data.dataset - INFO -   notumor: 1595
+2025-10-14 06:33:29 - data.dataset - INFO -   pituitary: 1457
+2025-10-14 06:33:29 - data.dataset - INFO - 
+Dataset: Testing
+2025-10-14 06:33:29 - data.dataset - INFO - Total images: 1311
+2025-10-14 06:33:29 - data.dataset - INFO -   glioma: 300
+2025-10-14 06:33:29 - data.dataset - INFO -   meningioma: 306
+2025-10-14 06:33:29 - data.dataset - INFO -   notumor: 405
+2025-10-14 06:33:29 - data.dataset - INFO -   pituitary: 300
+2025-10-14 06:33:29 - __main__ - INFO - Training samples: 5712
+2025-10-14 06:33:29 - __main__ - INFO - Testing samples: 1311
+2025-10-14 06:33:30 - __main__ - INFO - Model parameters: 24,564,292
+2025-10-14 06:33:30 - __main__ - INFO - 
+Epoch 1/50
+2025-10-14 06:33:40 - __main__ - INFO - Train Loss: 0.7370 | Train Acc: 72.72%
+2025-10-14 06:33:41 - __main__ - INFO - Val Loss: 0.6607 | Val Acc: 78.49%
+2025-10-14 06:33:41 - __main__ - INFO - Learning Rate: 0.000100
+2025-10-14 06:33:41 - __main__ - INFO - New best validation accuracy: 78.49%
+2025-10-14 06:33:41 - utils.checkpoint - INFO - Saved checkpoint: results/models/classifier_epoch_1.pth
+2025-10-14 06:33:41 - utils.checkpoint - INFO - Saved best checkpoint: results/models/checkpoint_best.pth
+2025-10-14 06:33:41 - __main__ - INFO - 
+Epoch 2/50
+2025-10-14 06:33:50 - __main__ - INFO - Train Loss: 0.6030 | Train Acc: 78.17%
+2025-10-14 06:33:51 - __main__ - INFO - Val Loss: 0.4454 | Val Acc: 84.52%
+2025-10-14 06:33:51 - __main__ - INFO - Learning Rate: 0.000100
+2025-10-14 06:33:51 - __main__ - INFO - New best validation accuracy: 84.52%
+2025-10-14 06:33:51 - utils.checkpoint - INFO - Saved checkpoint: results/models/classifier_epoch_2.pth
+2025-10-14 06:33:51 - utils.checkpoint - INFO - Saved best checkpoint: results/models/checkpoint_best.pth
+2025-10-14 06:33:51 - __main__ - INFO - 
+Epoch 3/50
+2025-10-14 06:34:00 - __main__ - INFO - Train Loss: 0.5358 | Train Acc: 80.51%
+2025-10-14 06:34:01 - __main__ - INFO - Val Loss: 0.4332 | Val Acc: 84.21%
+2025-10-14 06:34:01 - __main__ - INFO - Learning Rate: 0.000100
+2025-10-14 06:34:01 - utils.checkpoint - INFO - Saved checkpoint: results/models/classifier_epoch_3.pth
+2025-10-14 06:34:01 - __main__ - INFO - 
+Epoch 4/50
+2025-10-14 06:34:09 - __main__ - INFO - Train Loss: 0.5091 | Train Acc: 81.99%
+2025-10-14 06:34:10 - __main__ - INFO - Val Loss: 0.3988 | Val Acc: 86.04%
+2025-10-14 06:34:10 - __main__ - INFO - Learning Rate: 0.000100
+2025-10-14 06:34:10 - __main__ - INFO - New best validation accuracy: 86.04%
+2025-10-14 06:34:11 - utils.checkpoint - INFO - Saved checkpoint: results/models/classifier_epoch_4.pth
+2025-10-14 06:34:11 - utils.checkpoint - INFO - Saved best checkpoint: results/models/checkpoint_best.pth
+2025-10-14 06:34:11 - __main__ - INFO - 
+Epoch 5/50
+2025-10-14 06:34:19 - __main__ - INFO - Train Loss: 0.4836 | Train Acc: 82.65%
+2025-10-14 06:34:20 - __main__ - INFO - Val Loss: 0.3900 | Val Acc: 86.65%
+2025-10-14 06:34:20 - __main__ - INFO - Learning Rate: 0.000100
+2025-10-14 06:34:20 - __main__ - INFO - New best validation accuracy: 86.65%
+2025-10-14 06:34:20 - utils.checkpoint - INFO - Saved checkpoint: results/models/classifier_epoch_5.pth
+2025-10-14 06:34:21 - utils.checkpoint - INFO - Saved best checkpoint: results/models/checkpoint_best.pth
+2025-10-14 06:34:21 - __main__ - INFO - 
+Epoch 6/50
+2025-10-14 06:34:29 - __main__ - INFO - Train Loss: 0.4733 | Train Acc: 83.04%
+2025-10-14 06:34:30 - __main__ - INFO - Val Loss: 0.2927 | Val Acc: 89.02%
+2025-10-14 06:34:30 - __main__ - INFO - Learning Rate: 0.000100
+2025-10-14 06:34:30 - __main__ - INFO - New best validation accuracy: 89.02%
+2025-10-14 06:34:30 - utils.checkpoint - INFO - Saved checkpoint: results/models/classifier_epoch_6.pth
+2025-10-14 06:34:31 - utils.checkpoint - INFO - Saved best checkpoint: results/models/checkpoint_best.pth
+2025-10-14 06:34:31 - __main__ - INFO - 
+Epoch 7/50
+2025-10-14 06:34:39 - __main__ - INFO - Train Loss: 0.4384 | Train Acc: 84.38%
+2025-10-14 06:34:40 - __main__ - INFO - Val Loss: 0.2717 | Val Acc: 90.47%
+2025-10-14 06:34:40 - __main__ - INFO - Learning Rate: 0.000100
+2025-10-14 06:34:40 - __main__ - INFO - New best validation accuracy: 90.47%
+2025-10-14 06:34:40 - utils.checkpoint - INFO - Saved checkpoint: results/models/classifier_epoch_7.pth
+2025-10-14 06:34:41 - utils.checkpoint - INFO - Saved best checkpoint: results/models/checkpoint_best.pth
+2025-10-14 06:34:41 - __main__ - INFO - 
+Epoch 8/50
+2025-10-14 06:34:49 - __main__ - INFO - Train Loss: 0.4206 | Train Acc: 84.80%
+2025-10-14 06:34:50 - __main__ - INFO - Val Loss: 0.3118 | Val Acc: 89.63%
+2025-10-14 06:34:50 - __main__ - INFO - Learning Rate: 0.000100
+2025-10-14 06:34:50 - utils.checkpoint - INFO - Saved checkpoint: results/models/classifier_epoch_8.pth
+2025-10-14 06:34:50 - __main__ - INFO - 
+Epoch 9/50
+2025-10-14 06:34:58 - __main__ - INFO - Train Loss: 0.4174 | Train Acc: 85.98%
+2025-10-14 06:35:00 - __main__ - INFO - Val Loss: 0.2811 | Val Acc: 90.54%
+2025-10-14 06:35:00 - __main__ - INFO - Learning Rate: 0.000100
+2025-10-14 06:35:00 - __main__ - INFO - New best validation accuracy: 90.54%
+2025-10-14 06:35:00 - utils.checkpoint - INFO - Saved checkpoint: results/models/classifier_epoch_9.pth
+2025-10-14 06:35:00 - utils.checkpoint - INFO - Saved best checkpoint: results/models/checkpoint_best.pth
+2025-10-14 06:35:00 - __main__ - INFO - 
+Epoch 10/50
+2025-10-14 06:35:08 - __main__ - INFO - Train Loss: 0.4117 | Train Acc: 85.98%
+2025-10-14 06:35:09 - __main__ - INFO - Val Loss: 0.2857 | Val Acc: 89.02%
+2025-10-14 06:35:09 - __main__ - INFO - Learning Rate: 0.000100
+2025-10-14 06:35:10 - utils.checkpoint - INFO - Saved checkpoint: results/models/classifier_epoch_10.pth
+2025-10-14 06:35:10 - __main__ - INFO - 
+Epoch 11/50
+2025-10-14 06:35:18 - __main__ - INFO - Train Loss: 0.4068 | Train Acc: 86.13%
+2025-10-14 06:35:19 - __main__ - INFO - Val Loss: 0.2653 | Val Acc: 90.92%
+2025-10-14 06:35:19 - __main__ - INFO - Learning Rate: 0.000100
+2025-10-14 06:35:19 - __main__ - INFO - New best validation accuracy: 90.92%
+2025-10-14 06:35:19 - utils.checkpoint - INFO - Saved checkpoint: results/models/classifier_epoch_11.pth
+2025-10-14 06:35:20 - utils.checkpoint - INFO - Saved best checkpoint: results/models/checkpoint_best.pth
+2025-10-14 06:35:20 - __main__ - INFO - 
+Epoch 12/50
+2025-10-14 06:35:28 - __main__ - INFO - Train Loss: 0.3852 | Train Acc: 86.69%
+2025-10-14 06:35:29 - __main__ - INFO - Val Loss: 0.2854 | Val Acc: 90.47%
+2025-10-14 06:35:29 - __main__ - INFO - Learning Rate: 0.000100
+2025-10-14 06:35:29 - utils.checkpoint - INFO - Saved checkpoint: results/models/classifier_epoch_12.pth
+2025-10-14 06:35:29 - __main__ - INFO - 
+Epoch 13/50
+2025-10-14 06:35:37 - __main__ - INFO - Train Loss: 0.3877 | Train Acc: 86.45%
+2025-10-14 06:35:39 - __main__ - INFO - Val Loss: 0.2594 | Val Acc: 90.92%
+2025-10-14 06:35:39 - __main__ - INFO - Learning Rate: 0.000100
+2025-10-14 06:35:39 - utils.checkpoint - INFO - Saved checkpoint: results/models/classifier_epoch_13.pth
+2025-10-14 06:35:39 - __main__ - INFO - 
+Epoch 14/50
+2025-10-14 06:35:47 - __main__ - INFO - Train Loss: 0.3767 | Train Acc: 87.04%
+2025-10-14 06:35:48 - __main__ - INFO - Val Loss: 0.2453 | Val Acc: 91.53%
+2025-10-14 06:35:48 - __main__ - INFO - Learning Rate: 0.000100
+2025-10-14 06:35:48 - __main__ - INFO - New best validation accuracy: 91.53%
+2025-10-14 06:35:49 - utils.checkpoint - INFO - Saved checkpoint: results/models/classifier_epoch_14.pth
+2025-10-14 06:35:49 - utils.checkpoint - INFO - Saved best checkpoint: results/models/checkpoint_best.pth
+2025-10-14 06:35:49 - __main__ - INFO - 
+Epoch 15/50
+2025-10-14 06:35:57 - __main__ - INFO - Train Loss: 0.3786 | Train Acc: 86.92%
+2025-10-14 06:35:58 - __main__ - INFO - Val Loss: 0.2678 | Val Acc: 91.08%
+2025-10-14 06:35:58 - __main__ - INFO - Learning Rate: 0.000100
+2025-10-14 06:35:58 - utils.checkpoint - INFO - Saved checkpoint: results/models/classifier_epoch_15.pth
+2025-10-14 06:35:58 - __main__ - INFO - 
+Epoch 16/50
+2025-10-14 06:36:07 - __main__ - INFO - Train Loss: 0.3523 | Train Acc: 87.45%
+2025-10-14 06:36:08 - __main__ - INFO - Val Loss: 0.2293 | Val Acc: 91.84%
+2025-10-14 06:36:08 - __main__ - INFO - Learning Rate: 0.000100
+2025-10-14 06:36:08 - __main__ - INFO - New best validation accuracy: 91.84%
+2025-10-14 06:36:08 - utils.checkpoint - INFO - Saved checkpoint: results/models/classifier_epoch_16.pth
+2025-10-14 06:36:08 - utils.checkpoint - INFO - Saved best checkpoint: results/models/checkpoint_best.pth
+2025-10-14 06:36:08 - __main__ - INFO - 
+Epoch 17/50
+2025-10-14 06:36:16 - __main__ - INFO - Train Loss: 0.3459 | Train Acc: 88.46%
+2025-10-14 06:36:18 - __main__ - INFO - Val Loss: 0.2177 | Val Acc: 91.76%
+2025-10-14 06:36:18 - __main__ - INFO - Learning Rate: 0.000100
+2025-10-14 06:36:18 - utils.checkpoint - INFO - Saved checkpoint: results/models/classifier_epoch_17.pth
+2025-10-14 06:36:18 - __main__ - INFO - 
+Epoch 18/50
+2025-10-14 06:36:26 - __main__ - INFO - Train Loss: 0.3698 | Train Acc: 87.75%
+2025-10-14 06:36:27 - __main__ - INFO - Val Loss: 0.2079 | Val Acc: 92.07%
+2025-10-14 06:36:27 - __main__ - INFO - Learning Rate: 0.000100
+2025-10-14 06:36:27 - __main__ - INFO - New best validation accuracy: 92.07%
+2025-10-14 06:36:27 - utils.checkpoint - INFO - Saved checkpoint: results/models/classifier_epoch_18.pth
+2025-10-14 06:36:28 - utils.checkpoint - INFO - Saved best checkpoint: results/models/checkpoint_best.pth
+2025-10-14 06:36:28 - __main__ - INFO - 
+Epoch 19/50
+2025-10-14 06:36:36 - __main__ - INFO - Train Loss: 0.3279 | Train Acc: 89.13%
+2025-10-14 06:36:37 - __main__ - INFO - Val Loss: 0.2442 | Val Acc: 91.69%
+2025-10-14 06:36:37 - __main__ - INFO - Learning Rate: 0.000100
+2025-10-14 06:36:37 - utils.checkpoint - INFO - Saved checkpoint: results/models/classifier_epoch_19.pth
+2025-10-14 06:36:37 - __main__ - INFO - 
+Epoch 20/50
+2025-10-14 06:36:46 - __main__ - INFO - Train Loss: 0.3512 | Train Acc: 88.43%
+2025-10-14 06:36:47 - __main__ - INFO - Val Loss: 0.2369 | Val Acc: 91.23%
+2025-10-14 06:36:47 - __main__ - INFO - Learning Rate: 0.000100
+2025-10-14 06:36:47 - utils.checkpoint - INFO - Saved checkpoint: results/models/classifier_epoch_20.pth
+2025-10-14 06:36:47 - __main__ - INFO - 
+Epoch 21/50
+2025-10-14 06:36:55 - __main__ - INFO - Train Loss: 0.3498 | Train Acc: 88.53%
+2025-10-14 06:36:56 - __main__ - INFO - Val Loss: 0.1927 | Val Acc: 93.06%
+2025-10-14 06:36:56 - __main__ - INFO - Learning Rate: 0.000100
+2025-10-14 06:36:56 - __main__ - INFO - New best validation accuracy: 93.06%
+2025-10-14 06:36:57 - utils.checkpoint - INFO - Saved checkpoint: results/models/classifier_epoch_21.pth
+2025-10-14 06:36:57 - utils.checkpoint - INFO - Saved best checkpoint: results/models/checkpoint_best.pth
+2025-10-14 06:36:57 - __main__ - INFO - 
+Epoch 22/50
+2025-10-14 06:37:05 - __main__ - INFO - Train Loss: 0.3325 | Train Acc: 88.81%
+2025-10-14 06:37:06 - __main__ - INFO - Val Loss: 0.2035 | Val Acc: 91.84%
+2025-10-14 06:37:06 - __main__ - INFO - Learning Rate: 0.000100
+2025-10-14 06:37:07 - utils.checkpoint - INFO - Saved checkpoint: results/models/classifier_epoch_22.pth
+2025-10-14 06:37:07 - __main__ - INFO - 
+Epoch 23/50
+2025-10-14 06:37:15 - __main__ - INFO - Train Loss: 0.3238 | Train Acc: 89.25%
+2025-10-14 06:37:16 - __main__ - INFO - Val Loss: 0.1746 | Val Acc: 93.59%
+2025-10-14 06:37:16 - __main__ - INFO - Learning Rate: 0.000100
+2025-10-14 06:37:16 - __main__ - INFO - New best validation accuracy: 93.59%
+2025-10-14 06:37:16 - utils.checkpoint - INFO - Saved checkpoint: results/models/classifier_epoch_23.pth
+2025-10-14 06:37:16 - utils.checkpoint - INFO - Saved best checkpoint: results/models/checkpoint_best.pth
+2025-10-14 06:37:16 - __main__ - INFO - 
+Epoch 24/50
+2025-10-14 06:37:25 - __main__ - INFO - Train Loss: 0.3293 | Train Acc: 89.27%
+2025-10-14 06:37:26 - __main__ - INFO - Val Loss: 0.2109 | Val Acc: 92.68%
+2025-10-14 06:37:26 - __main__ - INFO - Learning Rate: 0.000100
+2025-10-14 06:37:26 - utils.checkpoint - INFO - Saved checkpoint: results/models/classifier_epoch_24.pth
+2025-10-14 06:37:26 - __main__ - INFO - 
+Epoch 25/50
+2025-10-14 06:37:34 - __main__ - INFO - Train Loss: 0.3287 | Train Acc: 88.80%
+2025-10-14 06:37:36 - __main__ - INFO - Val Loss: 0.1966 | Val Acc: 92.52%
+2025-10-14 06:37:36 - __main__ - INFO - Learning Rate: 0.000100
+2025-10-14 06:37:36 - utils.checkpoint - INFO - Saved checkpoint: results/models/classifier_epoch_25.pth
+2025-10-14 06:37:36 - __main__ - INFO - 
+Epoch 26/50
+2025-10-14 06:37:44 - __main__ - INFO - Train Loss: 0.3361 | Train Acc: 89.11%
+2025-10-14 06:37:45 - __main__ - INFO - Val Loss: 0.1996 | Val Acc: 92.14%
+2025-10-14 06:37:45 - __main__ - INFO - Learning Rate: 0.000100
+2025-10-14 06:37:45 - utils.checkpoint - INFO - Saved checkpoint: results/models/classifier_epoch_26.pth
+2025-10-14 06:37:46 - __main__ - INFO - 
+Epoch 27/50
+2025-10-14 06:37:54 - __main__ - INFO - Train Loss: 0.3021 | Train Acc: 89.86%
+2025-10-14 06:37:55 - __main__ - INFO - Val Loss: 0.2089 | Val Acc: 92.75%
+2025-10-14 06:37:55 - __main__ - INFO - Learning Rate: 0.000100
+2025-10-14 06:37:55 - utils.checkpoint - INFO - Saved checkpoint: results/models/classifier_epoch_27.pth
+2025-10-14 06:37:55 - __main__ - INFO - 
+Epoch 28/50
+2025-10-14 06:38:03 - __main__ - INFO - Train Loss: 0.3024 | Train Acc: 90.35%
+2025-10-14 06:38:05 - __main__ - INFO - Val Loss: 0.1707 | Val Acc: 93.82%
+2025-10-14 06:38:05 - __main__ - INFO - Learning Rate: 0.000100
+2025-10-14 06:38:05 - __main__ - INFO - New best validation accuracy: 93.82%
+2025-10-14 06:38:05 - utils.checkpoint - INFO - Saved checkpoint: results/models/classifier_epoch_28.pth
+2025-10-14 06:38:05 - utils.checkpoint - INFO - Saved best checkpoint: results/models/checkpoint_best.pth
+2025-10-14 06:38:05 - __main__ - INFO - 
+Epoch 29/50
+2025-10-14 06:38:13 - __main__ - INFO - Train Loss: 0.3117 | Train Acc: 90.14%
+2025-10-14 06:38:15 - __main__ - INFO - Val Loss: 0.1600 | Val Acc: 94.89%
+2025-10-14 06:38:15 - __main__ - INFO - Learning Rate: 0.000100
+2025-10-14 06:38:15 - __main__ - INFO - New best validation accuracy: 94.89%
+2025-10-14 06:38:15 - utils.checkpoint - INFO - Saved checkpoint: results/models/classifier_epoch_29.pth
+2025-10-14 06:38:15 - utils.checkpoint - INFO - Saved best checkpoint: results/models/checkpoint_best.pth
+2025-10-14 06:38:15 - __main__ - INFO - 
+Epoch 30/50
+2025-10-14 06:38:23 - __main__ - INFO - Train Loss: 0.3035 | Train Acc: 90.04%
+2025-10-14 06:38:24 - __main__ - INFO - Val Loss: 0.1638 | Val Acc: 94.13%
+2025-10-14 06:38:24 - __main__ - INFO - Learning Rate: 0.000100
+2025-10-14 06:38:25 - utils.checkpoint - INFO - Saved checkpoint: results/models/classifier_epoch_30.pth
+2025-10-14 06:38:25 - __main__ - INFO - 
+Epoch 31/50
+2025-10-14 06:38:33 - __main__ - INFO - Train Loss: 0.2943 | Train Acc: 90.41%
+2025-10-14 06:38:34 - __main__ - INFO - Val Loss: 0.1803 | Val Acc: 93.75%
+2025-10-14 06:38:34 - __main__ - INFO - Learning Rate: 0.000100
+2025-10-14 06:38:34 - utils.checkpoint - INFO - Saved checkpoint: results/models/classifier_epoch_31.pth
+2025-10-14 06:38:34 - __main__ - INFO - 
+Epoch 32/50
+2025-10-14 06:38:42 - __main__ - INFO - Train Loss: 0.3015 | Train Acc: 90.04%
+2025-10-14 06:38:44 - __main__ - INFO - Val Loss: 0.2306 | Val Acc: 92.60%
+2025-10-14 06:38:44 - __main__ - INFO - Learning Rate: 0.000100
+2025-10-14 06:38:44 - utils.checkpoint - INFO - Saved checkpoint: results/models/classifier_epoch_32.pth
+2025-10-14 06:38:44 - __main__ - INFO - 
+Epoch 33/50
+2025-10-14 06:38:52 - __main__ - INFO - Train Loss: 0.2926 | Train Acc: 90.06%
+2025-10-14 06:38:53 - __main__ - INFO - Val Loss: 0.2004 | Val Acc: 93.52%
+2025-10-14 06:38:53 - __main__ - INFO - Learning Rate: 0.000100
+2025-10-14 06:38:54 - utils.checkpoint - INFO - Saved checkpoint: results/models/classifier_epoch_33.pth
+2025-10-14 06:38:54 - __main__ - INFO - 
+Epoch 34/50
+2025-10-14 06:39:02 - __main__ - INFO - Train Loss: 0.3119 | Train Acc: 90.41%
+2025-10-14 06:39:03 - __main__ - INFO - Val Loss: 0.1989 | Val Acc: 93.52%
+2025-10-14 06:39:03 - __main__ - INFO - Learning Rate: 0.000100
+2025-10-14 06:39:03 - utils.checkpoint - INFO - Saved checkpoint: results/models/classifier_epoch_34.pth
+2025-10-14 06:39:03 - __main__ - INFO - 
+Epoch 35/50
+2025-10-14 06:39:12 - __main__ - INFO - Train Loss: 0.2779 | Train Acc: 91.37%
+2025-10-14 06:39:13 - __main__ - INFO - Val Loss: 0.1508 | Val Acc: 94.28%
+2025-10-14 06:39:13 - __main__ - INFO - Learning Rate: 0.000100
+2025-10-14 06:39:13 - utils.checkpoint - INFO - Saved checkpoint: results/models/classifier_epoch_35.pth
+2025-10-14 06:39:13 - __main__ - INFO - 
+Epoch 36/50
+2025-10-14 06:39:21 - __main__ - INFO - Train Loss: 0.2924 | Train Acc: 90.79%
+2025-10-14 06:39:22 - __main__ - INFO - Val Loss: 0.1535 | Val Acc: 94.43%
+2025-10-14 06:39:22 - __main__ - INFO - Learning Rate: 0.000100
+2025-10-14 06:39:23 - utils.checkpoint - INFO - Saved checkpoint: results/models/classifier_epoch_36.pth
+2025-10-14 06:39:23 - __main__ - INFO - 
+Epoch 37/50
+2025-10-14 06:39:31 - __main__ - INFO - Train Loss: 0.2797 | Train Acc: 90.70%
+2025-10-14 06:39:32 - __main__ - INFO - Val Loss: 0.1691 | Val Acc: 94.05%
+2025-10-14 06:39:32 - __main__ - INFO - Learning Rate: 0.000100
+2025-10-14 06:39:32 - utils.checkpoint - INFO - Saved checkpoint: results/models/classifier_epoch_37.pth
+2025-10-14 06:39:32 - __main__ - INFO - 
+Epoch 38/50
+2025-10-14 06:39:40 - __main__ - INFO - Train Loss: 0.2805 | Train Acc: 91.30%
+2025-10-14 06:39:42 - __main__ - INFO - Val Loss: 0.1587 | Val Acc: 94.28%
+2025-10-14 06:39:42 - __main__ - INFO - Learning Rate: 0.000100
+2025-10-14 06:39:42 - utils.checkpoint - INFO - Saved checkpoint: results/models/classifier_epoch_38.pth
+2025-10-14 06:39:42 - __main__ - INFO - 
+Epoch 39/50
+2025-10-14 06:39:50 - __main__ - INFO - Train Loss: 0.2644 | Train Acc: 92.02%
+2025-10-14 06:39:51 - __main__ - INFO - Val Loss: 0.1936 | Val Acc: 92.83%
+2025-10-14 06:39:51 - __main__ - INFO - Learning Rate: 0.000100
+2025-10-14 06:39:52 - utils.checkpoint - INFO - Saved checkpoint: results/models/classifier_epoch_39.pth
+2025-10-14 06:39:52 - __main__ - INFO - Early stopping triggered after 39 epochs
+2025-10-14 06:39:52 - __main__ - INFO - 
+Training completed!
+2025-10-14 06:39:52 - __main__ - INFO - Best validation accuracy: 94.89%

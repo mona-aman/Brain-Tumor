@@ -1,0 +1,510 @@
+2025-10-14 12:21:22 - __main__ - INFO - Starting Uncertainty Evaluation
+2025-10-14 12:21:22 - __main__ - INFO - Model type: both
+2025-10-14 12:28:14 - __main__ - INFO - Starting Uncertainty Evaluation
+2025-10-14 12:28:14 - __main__ - INFO - Model type: both
+2025-10-14 17:15:16 - __main__ - INFO - Starting Uncertainty Evaluation
+2025-10-14 17:15:16 - __main__ - INFO - Model type: both
+2025-10-14 17:15:18 - __main__ - INFO - Loaded classifier
+2025-10-14 17:15:18 - data.dataset - INFO - 
+Dataset: Testing
+2025-10-14 17:15:18 - data.dataset - INFO - Total images: 1311
+2025-10-14 17:15:18 - data.dataset - INFO -   glioma: 300
+2025-10-14 17:15:18 - data.dataset - INFO -   meningioma: 306
+2025-10-14 17:15:18 - data.dataset - INFO -   notumor: 405
+2025-10-14 17:15:18 - data.dataset - INFO -   pituitary: 300
+2025-10-14 17:15:18 - __main__ - INFO - 
+==================================================
+2025-10-14 17:15:18 - __main__ - INFO - Evaluating Standard ESRGAN
+2025-10-14 17:15:18 - __main__ - INFO - ==================================================
+2025-10-14 17:15:18 - __main__ - INFO - Loaded generator from results/checkpoints/esrgan_best.pth
+2025-10-14 17:15:18 - __main__ - INFO - Generating super-resolved images...
+2025-10-14 17:15:20 - __main__ - INFO - Computing uncertainty...
+2025-10-14 17:15:39 - evaluation.uncertainty_analysis - INFO - Added results for Standard ESRGAN: 1311 samples
+2025-10-14 17:15:39 - __main__ - INFO - 
+==================================================
+2025-10-14 17:15:39 - __main__ - INFO - Evaluating Task-Aware ESRGAN
+2025-10-14 17:15:39 - __main__ - INFO - ==================================================
+2025-10-14 17:15:40 - __main__ - INFO - Loaded generator from results/checkpoints/taskaware_best.pth
+2025-10-14 17:15:40 - __main__ - INFO - Generating super-resolved images...
+2025-10-14 17:15:42 - __main__ - INFO - Computing uncertainty...
+2025-10-14 17:16:01 - evaluation.uncertainty_analysis - INFO - Added results for Task-Aware ESRGAN: 1311 samples
+2025-10-14 17:16:01 - __main__ - INFO - 
+==================================================
+2025-10-14 17:16:01 - __main__ - INFO - Generating Comparison Analysis
+2025-10-14 17:16:01 - __main__ - INFO - ==================================================
+2025-10-14 17:16:01 - __main__ - INFO - 
+Standard ESRGAN:
+2025-10-14 17:16:01 - __main__ - INFO - ----------------------------------------
+2025-10-14 17:16:01 - __main__ - INFO -   flag_rate: 0.4554
+2025-10-14 17:16:01 - __main__ - INFO -   num_flagged: 597
+2025-10-14 17:16:01 - __main__ - INFO -   num_confident: 714
+2025-10-14 17:16:01 - __main__ - INFO -   confident_accuracy: 0.3221
+2025-10-14 17:16:01 - __main__ - INFO -   flag_precision: 0.7437
+2025-10-14 17:16:01 - __main__ - INFO -   uncertainty_error_correlation: 0.1182
+2025-10-14 17:16:01 - __main__ - INFO -   correlation_p_value: 0.0000
+2025-10-14 17:16:01 - __main__ - INFO -   uncertainty_auc: 0.5750
+2025-10-14 17:16:01 - __main__ - INFO -   accuracy: 0.2921
+2025-10-14 17:16:01 - __main__ - INFO -   mean_uncertainty: 0.4606572389602661
+2025-10-14 17:16:01 - __main__ - INFO - 
+Task-Aware ESRGAN:
+2025-10-14 17:16:01 - __main__ - INFO - ----------------------------------------
+2025-10-14 17:16:01 - __main__ - INFO -   flag_rate: 0.4714
+2025-10-14 17:16:01 - __main__ - INFO -   num_flagged: 618
+2025-10-14 17:16:01 - __main__ - INFO -   num_confident: 693
+2025-10-14 17:16:01 - __main__ - INFO -   confident_accuracy: 0.3218
+2025-10-14 17:16:01 - __main__ - INFO -   flag_precision: 0.7492
+2025-10-14 17:16:01 - __main__ - INFO -   uncertainty_error_correlation: 0.0918
+2025-10-14 17:16:01 - __main__ - INFO -   correlation_p_value: 0.0009
+2025-10-14 17:16:01 - __main__ - INFO -   uncertainty_auc: 0.5585
+2025-10-14 17:16:01 - __main__ - INFO -   accuracy: 0.2883
+2025-10-14 17:16:01 - __main__ - INFO -   mean_uncertainty: 0.45894306898117065
+2025-10-14 17:16:01 - __main__ - INFO - 
+Generating plots...
+2025-10-14 17:16:01 - evaluation.uncertainty_analysis - INFO - Generating comprehensive uncertainty analysis plots...
+2025-10-14 17:16:02 - evaluation.uncertainty_analysis - INFO - Saved uncertainty distribution plot
+2025-10-14 17:16:02 - evaluation.uncertainty_analysis - INFO - Saved uncertainty vs correctness plot
+2025-10-14 17:16:02 - evaluation.uncertainty_analysis - INFO - Saved ROC curve plot
+2025-10-14 17:16:03 - evaluation.uncertainty_analysis - INFO - Saved flagging trade-off plot
+2025-10-14 17:16:03 - evaluation.uncertainty_analysis - INFO - Saved per-class uncertainty plot
+2025-10-14 17:16:03 - evaluation.uncertainty_analysis - INFO - All plots generated successfully!
+2025-10-14 17:16:03 - evaluation.uncertainty_analysis - INFO - Saved comparison table to results/uncertainty_comparison.txt
+2025-10-14 17:16:03 - __main__ - INFO - 
+Evaluation completed!
+2025-10-14 17:16:03 - __main__ - INFO - Results saved to results/plots/
+2025-10-15 05:45:41 - __main__ - INFO - Starting Uncertainty Evaluation
+2025-10-15 05:45:41 - __main__ - INFO - Model type: both
+2025-10-15 05:45:42 - __main__ - INFO - Loaded classifier
+2025-10-15 05:45:43 - data.dataset - INFO - 
+Dataset: Testing
+2025-10-15 05:45:43 - data.dataset - INFO - Total images: 1311
+2025-10-15 05:45:43 - data.dataset - INFO -   glioma: 300
+2025-10-15 05:45:43 - data.dataset - INFO -   meningioma: 306
+2025-10-15 05:45:43 - data.dataset - INFO -   notumor: 405
+2025-10-15 05:45:43 - data.dataset - INFO -   pituitary: 300
+2025-10-15 05:45:43 - __main__ - INFO - Test dataset: 1311 images
+2025-10-15 05:45:43 - __main__ - INFO - 
+==================================================
+2025-10-15 05:45:43 - __main__ - INFO - Evaluating Standard ESRGAN
+2025-10-15 05:45:43 - __main__ - INFO - ==================================================
+2025-10-15 05:46:21 - __main__ - INFO - Starting Uncertainty Evaluation
+2025-10-15 05:46:21 - __main__ - INFO - Model type: both
+2025-10-15 05:46:22 - __main__ - INFO - Loaded classifier
+2025-10-15 05:46:23 - data.dataset - INFO - 
+Dataset: Testing
+2025-10-15 05:46:23 - data.dataset - INFO - Total images: 1311
+2025-10-15 05:46:23 - data.dataset - INFO -   glioma: 300
+2025-10-15 05:46:23 - data.dataset - INFO -   meningioma: 306
+2025-10-15 05:46:23 - data.dataset - INFO -   notumor: 405
+2025-10-15 05:46:23 - data.dataset - INFO -   pituitary: 300
+2025-10-15 05:46:23 - __main__ - INFO - Test dataset: 1311 images
+2025-10-15 05:46:23 - __main__ - INFO - 
+==================================================
+2025-10-15 05:46:23 - __main__ - INFO - Evaluating Standard ESRGAN
+2025-10-15 05:46:23 - __main__ - INFO - ==================================================
+2025-10-15 05:46:23 - __main__ - INFO - Loaded generator from results/checkpoints/esrgan_best.pth
+2025-10-15 05:46:25 - __main__ - INFO - Processed 10/164 batches
+2025-10-15 05:46:27 - __main__ - INFO - Processed 20/164 batches
+2025-10-15 05:46:28 - __main__ - INFO - Processed 30/164 batches
+2025-10-15 05:46:29 - __main__ - INFO - Processed 40/164 batches
+2025-10-15 05:46:31 - __main__ - INFO - Processed 50/164 batches
+2025-10-15 05:46:32 - __main__ - INFO - Processed 60/164 batches
+2025-10-15 05:46:34 - __main__ - INFO - Processed 70/164 batches
+2025-10-15 05:46:35 - __main__ - INFO - Processed 80/164 batches
+2025-10-15 05:46:37 - __main__ - INFO - Processed 90/164 batches
+2025-10-15 05:46:38 - __main__ - INFO - Processed 100/164 batches
+2025-10-15 05:46:40 - __main__ - INFO - Processed 110/164 batches
+2025-10-15 05:46:41 - __main__ - INFO - Processed 120/164 batches
+2025-10-15 05:46:43 - __main__ - INFO - Processed 130/164 batches
+2025-10-15 05:46:44 - __main__ - INFO - Processed 140/164 batches
+2025-10-15 05:46:46 - __main__ - INFO - Processed 150/164 batches
+2025-10-15 05:46:47 - __main__ - INFO - Processed 160/164 batches
+2025-10-15 05:46:48 - evaluation.uncertainty_analysis - INFO - Added results for Standard ESRGAN: 1311 samples
+2025-10-15 05:46:48 - __main__ - INFO - Standard ESRGAN Accuracy: 29.29%
+2025-10-15 05:46:48 - __main__ - INFO - 
+==================================================
+2025-10-15 05:46:48 - __main__ - INFO - Evaluating Task-Aware ESRGAN
+2025-10-15 05:46:48 - __main__ - INFO - ==================================================
+2025-10-15 05:47:38 - __main__ - INFO - Starting Uncertainty Evaluation
+2025-10-15 05:47:38 - __main__ - INFO - Model type: both
+2025-10-15 05:47:39 - __main__ - INFO - Loaded classifier
+2025-10-15 05:47:40 - data.dataset - INFO - 
+Dataset: Testing
+2025-10-15 05:47:40 - data.dataset - INFO - Total images: 1311
+2025-10-15 05:47:40 - data.dataset - INFO -   glioma: 300
+2025-10-15 05:47:40 - data.dataset - INFO -   meningioma: 306
+2025-10-15 05:47:40 - data.dataset - INFO -   notumor: 405
+2025-10-15 05:47:40 - data.dataset - INFO -   pituitary: 300
+2025-10-15 05:47:40 - __main__ - INFO - Test dataset: 1311 images
+2025-10-15 05:47:40 - __main__ - INFO - 
+==================================================
+2025-10-15 05:47:40 - __main__ - INFO - Evaluating Standard ESRGAN
+2025-10-15 05:47:40 - __main__ - INFO - ==================================================
+2025-10-15 05:47:40 - __main__ - INFO - Loaded generator from results/checkpoints/esrgan_best.pth
+2025-10-15 05:47:42 - __main__ - INFO - Processed 10/164 batches
+2025-10-15 05:47:44 - __main__ - INFO - Processed 20/164 batches
+2025-10-15 05:47:45 - __main__ - INFO - Processed 30/164 batches
+2025-10-15 05:47:47 - __main__ - INFO - Processed 40/164 batches
+2025-10-15 05:47:48 - __main__ - INFO - Processed 50/164 batches
+2025-10-15 05:47:50 - __main__ - INFO - Processed 60/164 batches
+2025-10-15 05:47:51 - __main__ - INFO - Processed 70/164 batches
+2025-10-15 05:47:53 - __main__ - INFO - Processed 80/164 batches
+2025-10-15 05:47:54 - __main__ - INFO - Processed 90/164 batches
+2025-10-15 05:47:56 - __main__ - INFO - Processed 100/164 batches
+2025-10-15 05:47:57 - __main__ - INFO - Processed 110/164 batches
+2025-10-15 05:47:59 - __main__ - INFO - Processed 120/164 batches
+2025-10-15 05:48:00 - __main__ - INFO - Processed 130/164 batches
+2025-10-15 05:48:02 - __main__ - INFO - Processed 140/164 batches
+2025-10-15 05:48:03 - __main__ - INFO - Processed 150/164 batches
+2025-10-15 05:48:05 - __main__ - INFO - Processed 160/164 batches
+2025-10-15 05:48:05 - evaluation.uncertainty_analysis - INFO - Added results for Standard ESRGAN: 1311 samples
+2025-10-15 05:48:05 - __main__ - INFO - Standard ESRGAN Accuracy: 29.52%
+2025-10-15 05:48:05 - __main__ - INFO - 
+==================================================
+2025-10-15 05:48:05 - __main__ - INFO - Evaluating Task-Aware ESRGAN
+2025-10-15 05:48:05 - __main__ - INFO - ==================================================
+2025-10-15 05:48:07 - __main__ - INFO - Loaded generator from results/checkpoints/taskaware_best.pth
+2025-10-15 05:48:09 - __main__ - INFO - Processed 10/164 batches
+2025-10-15 05:48:10 - __main__ - INFO - Processed 20/164 batches
+2025-10-15 05:48:12 - __main__ - INFO - Processed 30/164 batches
+2025-10-15 05:48:13 - __main__ - INFO - Processed 40/164 batches
+2025-10-15 05:48:15 - __main__ - INFO - Processed 50/164 batches
+2025-10-15 05:48:16 - __main__ - INFO - Processed 60/164 batches
+2025-10-15 05:48:18 - __main__ - INFO - Processed 70/164 batches
+2025-10-15 05:48:19 - __main__ - INFO - Processed 80/164 batches
+2025-10-15 05:48:21 - __main__ - INFO - Processed 90/164 batches
+2025-10-15 05:48:22 - __main__ - INFO - Processed 100/164 batches
+2025-10-15 05:48:24 - __main__ - INFO - Processed 110/164 batches
+2025-10-15 05:48:25 - __main__ - INFO - Processed 120/164 batches
+2025-10-15 05:48:27 - __main__ - INFO - Processed 130/164 batches
+2025-10-15 05:48:28 - __main__ - INFO - Processed 140/164 batches
+2025-10-15 05:48:30 - __main__ - INFO - Processed 150/164 batches
+2025-10-15 05:48:31 - __main__ - INFO - Processed 160/164 batches
+2025-10-15 05:48:32 - evaluation.uncertainty_analysis - INFO - Added results for Task-Aware ESRGAN: 1311 samples
+2025-10-15 05:48:32 - __main__ - INFO - Task-Aware ESRGAN Accuracy: 29.67%
+2025-10-15 05:48:32 - __main__ - INFO - 
+==================================================
+2025-10-15 05:48:32 - __main__ - INFO - Generating Comparison Analysis
+2025-10-15 05:48:32 - __main__ - INFO - ==================================================
+2025-10-15 05:48:32 - __main__ - INFO - 
+Standard ESRGAN:
+2025-10-15 05:48:32 - __main__ - INFO - ----------------------------------------
+2025-10-15 05:48:32 - __main__ - INFO -   flag_rate: 0.3974
+2025-10-15 05:48:32 - __main__ - INFO -   num_flagged: 521
+2025-10-15 05:48:32 - __main__ - INFO -   num_confident: 790
+2025-10-15 05:48:32 - __main__ - INFO -   confident_accuracy: 0.3228
+2025-10-15 05:48:32 - __main__ - INFO -   flag_precision: 0.7466
+2025-10-15 05:48:32 - __main__ - INFO -   uncertainty_error_correlation: 0.1089
+2025-10-15 05:48:32 - __main__ - INFO -   correlation_p_value: 0.0001
+2025-10-15 05:48:32 - __main__ - INFO -   uncertainty_auc: 0.5689
+2025-10-15 05:48:32 - __main__ - INFO -   accuracy: 0.2952
+2025-10-15 05:48:32 - __main__ - INFO -   mean_uncertainty: 0.40462175011634827
+2025-10-15 05:48:32 - __main__ - INFO - 
+Task-Aware ESRGAN:
+2025-10-15 05:48:32 - __main__ - INFO - ----------------------------------------
+2025-10-15 05:48:32 - __main__ - INFO -   flag_rate: 0.3860
+2025-10-15 05:48:32 - __main__ - INFO -   num_flagged: 506
+2025-10-15 05:48:32 - __main__ - INFO -   num_confident: 805
+2025-10-15 05:48:32 - __main__ - INFO -   confident_accuracy: 0.3180
+2025-10-15 05:48:32 - __main__ - INFO -   flag_precision: 0.7372
+2025-10-15 05:48:32 - __main__ - INFO -   uncertainty_error_correlation: 0.0664
+2025-10-15 05:48:32 - __main__ - INFO -   correlation_p_value: 0.0162
+2025-10-15 05:48:32 - __main__ - INFO -   uncertainty_auc: 0.5420
+2025-10-15 05:48:32 - __main__ - INFO -   accuracy: 0.2967
+2025-10-15 05:48:32 - __main__ - INFO -   mean_uncertainty: 0.4007842242717743
+2025-10-15 05:48:32 - __main__ - INFO - 
+Generating plots...
+2025-10-15 05:48:32 - evaluation.uncertainty_analysis - INFO - Generating comprehensive uncertainty analysis plots...
+2025-10-15 05:48:32 - evaluation.uncertainty_analysis - INFO - Saved uncertainty distribution plot
+2025-10-15 05:48:33 - evaluation.uncertainty_analysis - INFO - Saved uncertainty vs correctness plot
+2025-10-15 05:48:33 - evaluation.uncertainty_analysis - INFO - Saved ROC curve plot
+2025-10-15 05:48:34 - evaluation.uncertainty_analysis - INFO - Saved flagging trade-off plot
+2025-10-15 05:48:34 - evaluation.uncertainty_analysis - INFO - Saved per-class uncertainty plot
+2025-10-15 05:48:34 - evaluation.uncertainty_analysis - INFO - All plots generated successfully!
+2025-10-15 05:48:34 - evaluation.uncertainty_analysis - INFO - Saved comparison table to results/uncertainty_comparison.txt
+2025-10-15 05:48:34 - __main__ - INFO - 
+Evaluation completed!
+2025-10-15 05:48:34 - __main__ - INFO - Results saved to results/plots/
+2025-10-15 05:51:36 - __main__ - INFO - Starting Uncertainty Evaluation - FIXED VERSION
+2025-10-15 05:51:36 - __main__ - INFO - Model type: both
+2025-10-15 05:51:37 - __main__ - INFO - Loaded classifier
+2025-10-15 05:51:37 - data.dataset - INFO - 
+Dataset: Testing
+2025-10-15 05:51:37 - data.dataset - INFO - Total images: 1311
+2025-10-15 05:51:37 - data.dataset - INFO -   glioma: 300
+2025-10-15 05:51:37 - data.dataset - INFO -   meningioma: 306
+2025-10-15 05:51:37 - data.dataset - INFO -   notumor: 405
+2025-10-15 05:51:37 - data.dataset - INFO -   pituitary: 300
+2025-10-15 05:51:37 - __main__ - INFO - Test dataset: 1311 images
+2025-10-15 05:51:37 - __main__ - INFO - 
+==================================================
+2025-10-15 05:51:37 - __main__ - INFO - Evaluating Standard ESRGAN
+2025-10-15 05:51:37 - __main__ - INFO - ==================================================
+2025-10-15 05:51:38 - __main__ - INFO - Loaded generator from results/checkpoints/esrgan_best.pth
+2025-10-15 05:51:40 - evaluation.uncertainty_analysis - INFO - Added results for Standard ESRGAN: 7 samples
+2025-10-15 05:51:40 - __main__ - INFO - Standard ESRGAN Accuracy: 57.14%
+2025-10-15 05:51:40 - __main__ - INFO - 
+==================================================
+2025-10-15 05:51:40 - __main__ - INFO - Evaluating Task-Aware ESRGAN
+2025-10-15 05:51:40 - __main__ - INFO - ==================================================
+2025-10-15 05:51:41 - __main__ - INFO - Loaded generator from results/checkpoints/taskaware_best.pth
+2025-10-15 05:51:44 - evaluation.uncertainty_analysis - INFO - Added results for Task-Aware ESRGAN: 7 samples
+2025-10-15 05:51:44 - __main__ - INFO - Task-Aware ESRGAN Accuracy: 0.00%
+2025-10-15 05:51:44 - __main__ - INFO - 
+==================================================
+2025-10-15 05:51:44 - __main__ - INFO - Generating Comparison Analysis
+2025-10-15 05:51:44 - __main__ - INFO - ==================================================
+2025-10-15 05:51:44 - __main__ - INFO - 
+Standard ESRGAN:
+2025-10-15 05:51:44 - __main__ - INFO - ----------------------------------------
+2025-10-15 05:51:44 - __main__ - INFO -   flag_rate: 0.4286
+2025-10-15 05:51:44 - __main__ - INFO -   num_flagged: 3
+2025-10-15 05:51:44 - __main__ - INFO -   num_confident: 4
+2025-10-15 05:51:44 - __main__ - INFO -   confident_accuracy: 1.0000
+2025-10-15 05:51:44 - __main__ - INFO -   flag_precision: 1.0000
+2025-10-15 05:51:44 - __main__ - INFO -   uncertainty_error_correlation: 0.8660
+2025-10-15 05:51:44 - __main__ - INFO -   correlation_p_value: 0.0117
+2025-10-15 05:51:44 - __main__ - INFO -   uncertainty_auc: 1.0000
+2025-10-15 05:51:44 - __main__ - INFO -   accuracy: 0.5714
+2025-10-15 05:51:44 - __main__ - INFO -   mean_uncertainty: 0.45938220620155334
+2025-10-15 05:51:44 - __main__ - INFO - 
+Task-Aware ESRGAN:
+2025-10-15 05:51:44 - __main__ - INFO - ----------------------------------------
+2025-10-15 05:51:44 - __main__ - INFO -   flag_rate: 0.4286
+2025-10-15 05:51:44 - __main__ - INFO -   num_flagged: 3
+2025-10-15 05:51:44 - __main__ - INFO -   num_confident: 4
+2025-10-15 05:51:44 - __main__ - INFO -   confident_accuracy: 0.0000
+2025-10-15 05:51:44 - __main__ - INFO -   flag_precision: 1.0000
+2025-10-15 05:51:44 - __main__ - INFO -   uncertainty_error_correlation: nan
+2025-10-15 05:51:44 - __main__ - INFO -   correlation_p_value: nan
+2025-10-15 05:51:44 - __main__ - INFO -   uncertainty_auc: 0.5000
+2025-10-15 05:51:44 - __main__ - INFO -   accuracy: 0.0000
+2025-10-15 05:51:44 - __main__ - INFO -   mean_uncertainty: 0.5813239216804504
+2025-10-15 05:51:44 - __main__ - INFO - 
+Generating plots...
+2025-10-15 05:51:44 - evaluation.uncertainty_analysis - INFO - Generating comprehensive uncertainty analysis plots...
+2025-10-15 05:51:46 - evaluation.uncertainty_analysis - INFO - Saved uncertainty distribution plot
+2025-10-15 05:51:46 - evaluation.uncertainty_analysis - INFO - Saved uncertainty vs correctness plot
+2025-10-15 05:53:59 - __main__ - INFO - Starting Uncertainty Evaluation - FULLY FIXED
+2025-10-15 05:53:59 - __main__ - INFO - Model type: both
+2025-10-15 05:54:00 - __main__ - INFO - Loaded classifier
+2025-10-15 05:54:00 - data.dataset - INFO - 
+Dataset: Testing
+2025-10-15 05:54:00 - data.dataset - INFO - Total images: 1311
+2025-10-15 05:54:00 - data.dataset - INFO -   glioma: 300
+2025-10-15 05:54:00 - data.dataset - INFO -   meningioma: 306
+2025-10-15 05:54:00 - data.dataset - INFO -   notumor: 405
+2025-10-15 05:54:00 - data.dataset - INFO -   pituitary: 300
+2025-10-15 05:54:00 - __main__ - INFO - Test dataset: 1311 images
+2025-10-15 05:54:00 - __main__ - INFO - Number of batches: 164
+2025-10-15 05:54:00 - __main__ - INFO - 
+==================================================
+2025-10-15 05:54:00 - __main__ - INFO - Evaluating Standard ESRGAN
+2025-10-15 05:54:00 - __main__ - INFO - ==================================================
+2025-10-15 05:54:01 - __main__ - INFO - Loaded generator from results/checkpoints/esrgan_best.pth
+2025-10-15 05:54:03 - __main__ - INFO - Processed 10/164 batches
+2025-10-15 05:54:04 - __main__ - INFO - Processed 20/164 batches
+2025-10-15 05:54:05 - __main__ - INFO - Processed 30/164 batches
+2025-10-15 05:54:06 - __main__ - INFO - Processed 40/164 batches
+2025-10-15 05:54:08 - __main__ - INFO - Processed 50/164 batches
+2025-10-15 05:54:09 - __main__ - INFO - Processed 60/164 batches
+2025-10-15 05:54:10 - __main__ - INFO - Processed 70/164 batches
+2025-10-15 05:54:11 - __main__ - INFO - Processed 80/164 batches
+2025-10-15 05:54:12 - __main__ - INFO - Processed 90/164 batches
+2025-10-15 05:54:14 - __main__ - INFO - Processed 100/164 batches
+2025-10-15 05:54:15 - __main__ - INFO - Processed 110/164 batches
+2025-10-15 05:54:16 - __main__ - INFO - Processed 120/164 batches
+2025-10-15 05:54:17 - __main__ - INFO - Processed 130/164 batches
+2025-10-15 05:54:19 - __main__ - INFO - Processed 140/164 batches
+2025-10-15 05:54:20 - __main__ - INFO - Processed 150/164 batches
+2025-10-15 05:54:21 - __main__ - INFO - Processed 160/164 batches
+2025-10-15 05:54:22 - __main__ - INFO - Total samples processed: 1311
+2025-10-15 05:54:22 - evaluation.uncertainty_analysis - INFO - Added results for Standard ESRGAN: 1311 samples
+2025-10-15 05:54:22 - __main__ - INFO - ✓ Standard ESRGAN Accuracy: 70.63%
+2025-10-15 05:54:22 - __main__ - INFO - 
+==================================================
+2025-10-15 05:54:22 - __main__ - INFO - Evaluating Task-Aware ESRGAN
+2025-10-15 05:54:22 - __main__ - INFO - ==================================================
+2025-10-15 05:54:22 - __main__ - INFO - Loaded generator from results/checkpoints/taskaware_best.pth
+2025-10-15 05:54:23 - __main__ - INFO - Processed 10/164 batches
+2025-10-15 05:54:25 - __main__ - INFO - Processed 20/164 batches
+2025-10-15 05:54:26 - __main__ - INFO - Processed 30/164 batches
+2025-10-15 05:54:27 - __main__ - INFO - Processed 40/164 batches
+2025-10-15 05:54:28 - __main__ - INFO - Processed 50/164 batches
+2025-10-15 05:54:30 - __main__ - INFO - Processed 60/164 batches
+2025-10-15 05:54:31 - __main__ - INFO - Processed 70/164 batches
+2025-10-15 05:54:32 - __main__ - INFO - Processed 80/164 batches
+2025-10-15 05:54:33 - __main__ - INFO - Processed 90/164 batches
+2025-10-15 05:54:35 - __main__ - INFO - Processed 100/164 batches
+2025-10-15 05:54:36 - __main__ - INFO - Processed 110/164 batches
+2025-10-15 05:54:37 - __main__ - INFO - Processed 120/164 batches
+2025-10-15 05:54:38 - __main__ - INFO - Processed 130/164 batches
+2025-10-15 05:54:40 - __main__ - INFO - Processed 140/164 batches
+2025-10-15 05:54:41 - __main__ - INFO - Processed 150/164 batches
+2025-10-15 05:54:42 - __main__ - INFO - Processed 160/164 batches
+2025-10-15 05:54:43 - __main__ - INFO - Total samples processed: 1311
+2025-10-15 05:54:43 - evaluation.uncertainty_analysis - INFO - Added results for Task-Aware ESRGAN: 1311 samples
+2025-10-15 05:54:43 - __main__ - INFO - ✓ Task-Aware ESRGAN Accuracy: 42.26%
+2025-10-15 05:54:43 - __main__ - INFO - 
+==================================================
+2025-10-15 05:54:43 - __main__ - INFO - Generating Comparison Analysis
+2025-10-15 05:54:43 - __main__ - INFO - ==================================================
+2025-10-15 05:54:43 - __main__ - INFO - 
+Standard ESRGAN:
+2025-10-15 05:54:43 - __main__ - INFO - ----------------------------------------
+2025-10-15 05:54:43 - __main__ - INFO -   flag_rate: 0.3944
+2025-10-15 05:54:43 - __main__ - INFO -   num_flagged: 517
+2025-10-15 05:54:43 - __main__ - INFO -   num_confident: 794
+2025-10-15 05:54:43 - __main__ - INFO -   confident_accuracy: 0.8401
+2025-10-15 05:54:43 - __main__ - INFO -   flag_precision: 0.4990
+2025-10-15 05:54:43 - __main__ - INFO -   uncertainty_error_correlation: 0.4214
+2025-10-15 05:54:43 - __main__ - INFO -   correlation_p_value: 0.0000
+2025-10-15 05:54:43 - __main__ - INFO -   uncertainty_auc: 0.7671
+2025-10-15 05:54:43 - __main__ - INFO -   accuracy: 0.7063
+2025-10-15 05:54:43 - __main__ - INFO -   mean_uncertainty: 0.400448739528656
+2025-10-15 05:54:43 - __main__ - INFO - 
+Task-Aware ESRGAN:
+2025-10-15 05:54:43 - __main__ - INFO - ----------------------------------------
+2025-10-15 05:54:43 - __main__ - INFO -   flag_rate: 0.3455
+2025-10-15 05:54:43 - __main__ - INFO -   num_flagged: 453
+2025-10-15 05:54:43 - __main__ - INFO -   num_confident: 858
+2025-10-15 05:54:43 - __main__ - INFO -   confident_accuracy: 0.4907
+2025-10-15 05:54:43 - __main__ - INFO -   flag_precision: 0.7064
+2025-10-15 05:54:43 - __main__ - INFO -   uncertainty_error_correlation: 0.3891
+2025-10-15 05:54:43 - __main__ - INFO -   correlation_p_value: 0.0000
+2025-10-15 05:54:43 - __main__ - INFO -   uncertainty_auc: 0.7274
+2025-10-15 05:54:43 - __main__ - INFO -   accuracy: 0.4226
+2025-10-15 05:54:43 - __main__ - INFO -   mean_uncertainty: 0.357231080532074
+2025-10-15 05:54:43 - __main__ - INFO - 
+Generating plots...
+2025-10-15 05:54:43 - evaluation.uncertainty_analysis - INFO - Generating comprehensive uncertainty analysis plots...
+2025-10-15 05:54:43 - evaluation.uncertainty_analysis - INFO - Saved uncertainty distribution plot
+2025-10-15 05:54:44 - evaluation.uncertainty_analysis - INFO - Saved uncertainty vs correctness plot
+2025-10-15 05:54:44 - evaluation.uncertainty_analysis - INFO - Saved ROC curve plot
+2025-10-15 05:54:45 - evaluation.uncertainty_analysis - INFO - Saved flagging trade-off plot
+2025-10-15 05:54:45 - evaluation.uncertainty_analysis - INFO - Saved per-class uncertainty plot
+2025-10-15 05:54:45 - evaluation.uncertainty_analysis - INFO - All plots generated successfully!
+2025-10-15 05:54:45 - evaluation.uncertainty_analysis - INFO - Saved comparison table to results/uncertainty_comparison.txt
+2025-10-15 05:54:45 - __main__ - INFO - ✓ All plots and tables generated successfully!
+2025-10-15 05:54:45 - __main__ - INFO - 
+Evaluation completed!
+2025-10-15 05:54:45 - __main__ - INFO - Results saved to results/plots/
+2025-10-15 07:22:07 - __main__ - INFO - Starting Uncertainty Evaluation - FULLY FIXED
+2025-10-15 07:22:07 - __main__ - INFO - Model type: both
+2025-10-15 07:22:09 - __main__ - INFO - Loaded classifier
+2025-10-15 07:22:09 - data.dataset - INFO - 
+Dataset: Testing
+2025-10-15 07:22:09 - data.dataset - INFO - Total images: 1311
+2025-10-15 07:22:09 - data.dataset - INFO -   glioma: 300
+2025-10-15 07:22:09 - data.dataset - INFO -   meningioma: 306
+2025-10-15 07:22:09 - data.dataset - INFO -   notumor: 405
+2025-10-15 07:22:09 - data.dataset - INFO -   pituitary: 300
+2025-10-15 07:22:09 - __main__ - INFO - Test dataset: 1311 images
+2025-10-15 07:22:09 - __main__ - INFO - Number of batches: 164
+2025-10-15 07:22:09 - __main__ - INFO - 
+==================================================
+2025-10-15 07:22:09 - __main__ - INFO - Evaluating Standard ESRGAN
+2025-10-15 07:22:09 - __main__ - INFO - ==================================================
+2025-10-15 07:23:49 - __main__ - INFO - Starting Uncertainty Evaluation - FULLY FIXED
+2025-10-15 07:23:49 - __main__ - INFO - Model type: both
+2025-10-15 07:23:51 - __main__ - INFO - Loaded classifier
+2025-10-15 07:23:51 - data.dataset - INFO - 
+Dataset: Testing
+2025-10-15 07:23:51 - data.dataset - INFO - Total images: 1311
+2025-10-15 07:23:51 - data.dataset - INFO -   glioma: 300
+2025-10-15 07:23:51 - data.dataset - INFO -   meningioma: 306
+2025-10-15 07:23:51 - data.dataset - INFO -   notumor: 405
+2025-10-15 07:23:51 - data.dataset - INFO -   pituitary: 300
+2025-10-15 07:23:51 - __main__ - INFO - Test dataset: 1311 images
+2025-10-15 07:23:51 - __main__ - INFO - Number of batches: 164
+2025-10-15 07:23:51 - __main__ - INFO - 
+==================================================
+2025-10-15 07:23:51 - __main__ - INFO - Evaluating Standard ESRGAN
+2025-10-15 07:23:51 - __main__ - INFO - ==================================================
+2025-10-15 07:23:52 - __main__ - INFO - Loaded generator from results/checkpoints/Standared_esrgan_best.pth
+2025-10-15 07:23:54 - __main__ - INFO - Processed 10/164 batches
+2025-10-15 07:23:55 - __main__ - INFO - Processed 20/164 batches
+2025-10-15 07:23:56 - __main__ - INFO - Processed 30/164 batches
+2025-10-15 07:23:58 - __main__ - INFO - Processed 40/164 batches
+2025-10-15 07:23:59 - __main__ - INFO - Processed 50/164 batches
+2025-10-15 07:24:00 - __main__ - INFO - Processed 60/164 batches
+2025-10-15 07:24:01 - __main__ - INFO - Processed 70/164 batches
+2025-10-15 07:24:02 - __main__ - INFO - Processed 80/164 batches
+2025-10-15 07:24:04 - __main__ - INFO - Processed 90/164 batches
+2025-10-15 07:24:05 - __main__ - INFO - Processed 100/164 batches
+2025-10-15 07:24:06 - __main__ - INFO - Processed 110/164 batches
+2025-10-15 07:24:07 - __main__ - INFO - Processed 120/164 batches
+2025-10-15 07:24:08 - __main__ - INFO - Processed 130/164 batches
+2025-10-15 07:24:10 - __main__ - INFO - Processed 140/164 batches
+2025-10-15 07:24:11 - __main__ - INFO - Processed 150/164 batches
+2025-10-15 07:24:12 - __main__ - INFO - Processed 160/164 batches
+2025-10-15 07:24:13 - __main__ - INFO - Total samples processed: 1311
+2025-10-15 07:24:13 - evaluation.uncertainty_analysis - INFO - Added results for Standard ESRGAN: 1311 samples
+2025-10-15 07:24:13 - __main__ - INFO - ✓ Standard ESRGAN Accuracy: 71.01%
+2025-10-15 07:24:13 - __main__ - INFO - 
+==================================================
+2025-10-15 07:24:13 - __main__ - INFO - Evaluating Task-Aware ESRGAN
+2025-10-15 07:24:13 - __main__ - INFO - ==================================================
+2025-10-15 07:24:13 - __main__ - INFO - Loaded generator from results/checkpoints/esrgan_best.pth
+2025-10-15 07:24:14 - __main__ - INFO - Processed 10/164 batches
+2025-10-15 07:24:16 - __main__ - INFO - Processed 20/164 batches
+2025-10-15 07:24:17 - __main__ - INFO - Processed 30/164 batches
+2025-10-15 07:24:18 - __main__ - INFO - Processed 40/164 batches
+2025-10-15 07:24:19 - __main__ - INFO - Processed 50/164 batches
+2025-10-15 07:24:21 - __main__ - INFO - Processed 60/164 batches
+2025-10-15 07:24:22 - __main__ - INFO - Processed 70/164 batches
+2025-10-15 07:24:23 - __main__ - INFO - Processed 80/164 batches
+2025-10-15 07:24:24 - __main__ - INFO - Processed 90/164 batches
+2025-10-15 07:24:25 - __main__ - INFO - Processed 100/164 batches
+2025-10-15 07:24:27 - __main__ - INFO - Processed 110/164 batches
+2025-10-15 07:24:28 - __main__ - INFO - Processed 120/164 batches
+2025-10-15 07:24:29 - __main__ - INFO - Processed 130/164 batches
+2025-10-15 07:24:30 - __main__ - INFO - Processed 140/164 batches
+2025-10-15 07:24:32 - __main__ - INFO - Processed 150/164 batches
+2025-10-15 07:24:33 - __main__ - INFO - Processed 160/164 batches
+2025-10-15 07:24:33 - __main__ - INFO - Total samples processed: 1311
+2025-10-15 07:24:33 - evaluation.uncertainty_analysis - INFO - Added results for Task-Aware ESRGAN: 1311 samples
+2025-10-15 07:24:33 - __main__ - INFO - ✓ Task-Aware ESRGAN Accuracy: 81.16%
+2025-10-15 07:24:33 - __main__ - INFO - 
+==================================================
+2025-10-15 07:24:33 - __main__ - INFO - Generating Comparison Analysis
+2025-10-15 07:24:33 - __main__ - INFO - ==================================================
+2025-10-15 07:24:33 - __main__ - INFO - 
+Standard ESRGAN:
+2025-10-15 07:24:33 - __main__ - INFO - ----------------------------------------
+2025-10-15 07:24:33 - __main__ - INFO -   flag_rate: 0.3913
+2025-10-15 07:24:33 - __main__ - INFO -   num_flagged: 513
+2025-10-15 07:24:33 - __main__ - INFO -   num_confident: 798
+2025-10-15 07:24:33 - __main__ - INFO -   confident_accuracy: 0.8446
+2025-10-15 07:24:33 - __main__ - INFO -   flag_precision: 0.4990
+2025-10-15 07:24:33 - __main__ - INFO -   uncertainty_error_correlation: 0.4141
+2025-10-15 07:24:33 - __main__ - INFO -   correlation_p_value: 0.0000
+2025-10-15 07:24:33 - __main__ - INFO -   uncertainty_auc: 0.7635
+2025-10-15 07:24:33 - __main__ - INFO -   accuracy: 0.7101
+2025-10-15 07:24:33 - __main__ - INFO -   mean_uncertainty: 0.40187177062034607
+2025-10-15 07:24:33 - __main__ - INFO - 
+Task-Aware ESRGAN:
+2025-10-15 07:24:33 - __main__ - INFO - ----------------------------------------
+2025-10-15 07:24:33 - __main__ - INFO -   flag_rate: 0.2799
+2025-10-15 07:24:33 - __main__ - INFO -   num_flagged: 367
+2025-10-15 07:24:33 - __main__ - INFO -   num_confident: 944
+2025-10-15 07:24:33 - __main__ - INFO -   confident_accuracy: 0.9227
+2025-10-15 07:24:33 - __main__ - INFO -   flag_precision: 0.4741
+2025-10-15 07:24:33 - __main__ - INFO -   uncertainty_error_correlation: 0.4548
+2025-10-15 07:24:33 - __main__ - INFO -   correlation_p_value: 0.0000
+2025-10-15 07:24:33 - __main__ - INFO -   uncertainty_auc: 0.8357
+2025-10-15 07:24:33 - __main__ - INFO -   accuracy: 0.8116
+2025-10-15 07:24:33 - __main__ - INFO -   mean_uncertainty: 0.2958832383155823
+2025-10-15 07:24:33 - __main__ - INFO - 
+Generating plots...
+2025-10-15 07:24:33 - evaluation.uncertainty_analysis - INFO - Generating comprehensive uncertainty analysis plots...
+2025-10-15 07:24:34 - evaluation.uncertainty_analysis - INFO - Saved uncertainty distribution plot
+2025-10-15 07:24:35 - evaluation.uncertainty_analysis - INFO - Saved uncertainty vs correctness plot
+2025-10-15 07:24:35 - evaluation.uncertainty_analysis - INFO - Saved ROC curve plot
+2025-10-15 07:24:36 - evaluation.uncertainty_analysis - INFO - Saved flagging trade-off plot
+2025-10-15 07:24:36 - evaluation.uncertainty_analysis - INFO - Saved per-class uncertainty plot
+2025-10-15 07:24:36 - evaluation.uncertainty_analysis - INFO - All plots generated successfully!
+2025-10-15 07:24:36 - evaluation.uncertainty_analysis - INFO - Saved comparison table to results/uncertainty_comparison.txt
+2025-10-15 07:24:36 - __main__ - INFO - ✓ All plots and tables generated successfully!
+2025-10-15 07:24:36 - __main__ - INFO - 
+Evaluation completed!
+2025-10-15 07:24:36 - __main__ - INFO - Results saved to results/plots/
